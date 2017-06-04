@@ -2,6 +2,10 @@ package com.example.chapmac.fitnessapp.myfitnessapp;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -10,31 +14,29 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import java.util.List;
-
-/**
- * Created by chapmac on 6/4/2017 AD.
- */
-
 public class MainActivity extends Activity implements MainView, AdapterView.OnItemClickListener {
 
     private ListView listView;
     private ProgressBar progressBar;
     private MainPresenter presenter;
-
-    @Override protected void onCreate(Bundle savedInstanceState) {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         listView = (ListView) findViewById(R.id.list);
         listView.setOnItemClickListener(this);
         progressBar = (ProgressBar) findViewById(R.id.progress);
         presenter = new MainPresenterImpl(this, new FindItemsInteractorImpl());
     }
 
+
+
     @Override protected void onResume() {
         super.onResume();
         presenter.onResume();
     }
-//
+
 //    @Override public boolean onCreateOptionsMenu(Menu menu) {
 //        getMenuInflater().inflate(R.menu.main, menu);
 //        return true;

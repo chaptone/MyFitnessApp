@@ -17,9 +17,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.chapmac.fitnessapp.myfitnessapp.MainActivity"
-            android:label="@string/app_name" >
-        </activity>
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
