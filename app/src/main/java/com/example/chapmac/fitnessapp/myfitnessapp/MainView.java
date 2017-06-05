@@ -11,5 +11,5 @@ public interface MainView {
 
     void setItems(List<Workout> items);
 
-    void showMessage(String message);
+    void navigateToPosture(String str);
 }

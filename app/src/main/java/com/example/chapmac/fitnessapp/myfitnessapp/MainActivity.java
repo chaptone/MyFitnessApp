@@ -1,6 +1,7 @@
 package com.example.chapmac.fitnessapp.myfitnessapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -52,8 +53,10 @@ public class MainActivity extends Activity implements MainView, AdapterView.OnIt
         listView.setAdapter(adapter);
     }
 
-    @Override public void showMessage(String message) {
-        Toast.makeText(this, message, Toast.LENGTH_LONG).show();
+    @Override public void navigateToPosture(String str) {
+        Intent intent = new Intent(this,PostureActivity.class);
+        intent.putExtra("Message", str);
+        startActivity(intent);
     }
 
     @Override public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
