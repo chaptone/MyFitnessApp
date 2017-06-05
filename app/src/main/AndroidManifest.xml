@@ -23,6 +23,10 @@
         <activity
             android:name=".Posture.PostureActivity"
             android:label="@string/title_activity_posture"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Detail.DetailActivity"
+            android:label="@string/title_activity_detail"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

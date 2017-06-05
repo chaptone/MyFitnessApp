@@ -12,6 +12,7 @@ import android.widget.ProgressBar;
 
 import com.example.chapmac.fitnessapp.myfitnessapp.Data.AdapterPosture;
 import com.example.chapmac.fitnessapp.myfitnessapp.Data.Posture;
+import com.example.chapmac.fitnessapp.myfitnessapp.Detail.DetailActivity;
 import com.example.chapmac.fitnessapp.myfitnessapp.R;
 
 import java.util.List;
@@ -70,7 +71,7 @@ public class PostureActivity extends AppCompatActivity implements PostureView, A
 
     @Override
     public void navigateToPosture(String str) {
-        Intent intent = new Intent(this,PostureActivity.class);
+        Intent intent = new Intent(this, DetailActivity.class);
         intent.putExtra("Message", str);
         startActivity(intent);
     }

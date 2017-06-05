@@ -33,15 +33,12 @@ public class PosturePresenterImpl implements PosturePresenter , PostureInteracto
     public void onItemClicked(int position) {
         String str = "";
         if (postureView != null) {
-            if(position == 0) str = "Abs";
-            if(position == 1) str = "Back";
-            if(position == 2) str = "Biceps";
-            if(position == 3) str = "Calf";
-            if(position == 4) str = "Chest";
-            if(position == 5) str = "Forearms";
-            if(position == 6) str = "Legs";
-            if(position == 7) str = "Shoulders";
-            if(position == 8) str = "Triceps";
+            if(position == 0) str = "Incline Bench Sit-Ups";
+            if(position == 1) str = "Hanging Leg Raises";
+            if(position == 2) str = "Dumbbell Side Bends";
+            if(position == 3) str = "Crunchs";
+            if(position == 4) str = "Sit-Ups";
+            if(position == 5) str = "Leg Raises";
             postureView.navigateToPosture(str);
         }
     }
