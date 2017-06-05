@@ -1,17 +1,20 @@
-package com.example.chapmac.fitnessapp.myfitnessapp;
+package com.example.chapmac.fitnessapp.myfitnessapp.Data;
 
 /**
  * Created by chapmac on 6/5/2017 AD.
  */
 
-public class Workout {
+public class Posture {
     private String title;
     private int icon;
+    private String Descrip;
 
-    public Workout(String title , int icon){
+    public Posture (String title,int icon,String Descrip){
         this.title = title;
         this.icon = icon;
+        this.Descrip = Descrip;
     }
+
 
     public String getTitle() {
         return title;
@@ -19,6 +22,14 @@ public class Workout {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getDescrip() {
+        return Descrip;
+    }
+
+    public void setDescrip(String descrip) {
+        Descrip = descrip;
     }
 
     public int getIcon() {
@@ -29,3 +40,4 @@ public class Workout {
         this.icon = icon;
     }
 }
+

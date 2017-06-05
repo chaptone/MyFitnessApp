@@ -1,4 +1,4 @@
-package com.example.chapmac.fitnessapp.myfitnessapp;
+package com.example.chapmac.fitnessapp.myfitnessapp.Login;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+
+import com.example.chapmac.fitnessapp.myfitnessapp.Workouts.MainActivity;
+import com.example.chapmac.fitnessapp.myfitnessapp.R;
 
 public class LoginActivity extends AppCompatActivity implements LoginView, View.OnClickListener {
 

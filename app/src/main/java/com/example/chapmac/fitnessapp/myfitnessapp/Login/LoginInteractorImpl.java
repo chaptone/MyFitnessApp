@@ -1,4 +1,4 @@
-package com.example.chapmac.fitnessapp.myfitnessapp;
+package com.example.chapmac.fitnessapp.myfitnessapp.Login;
 
 import android.os.Handler;
 import android.text.TextUtils;

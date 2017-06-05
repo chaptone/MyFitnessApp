@@ -1,5 +1,7 @@
 
-package com.example.chapmac.fitnessapp.myfitnessapp;
+package com.example.chapmac.fitnessapp.myfitnessapp.Workouts;
+
+import com.example.chapmac.fitnessapp.myfitnessapp.Data.Workout;
 
 import java.util.List;
 

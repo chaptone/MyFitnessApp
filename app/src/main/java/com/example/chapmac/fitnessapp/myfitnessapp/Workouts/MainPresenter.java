@@ -1,5 +1,5 @@
 
-package com.example.chapmac.fitnessapp.myfitnessapp;
+package com.example.chapmac.fitnessapp.myfitnessapp.Workouts;
 
 public interface MainPresenter {
 

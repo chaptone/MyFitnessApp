@@ -1,4 +1,4 @@
-package com.example.chapmac.fitnessapp.myfitnessapp;
+package com.example.chapmac.fitnessapp.myfitnessapp.Workouts;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,7 +7,11 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
-import android.widget.Toast;
+
+import com.example.chapmac.fitnessapp.myfitnessapp.Data.Adapter;
+import com.example.chapmac.fitnessapp.myfitnessapp.Posture.PostureActivity;
+import com.example.chapmac.fitnessapp.myfitnessapp.R;
+import com.example.chapmac.fitnessapp.myfitnessapp.Data.Workout;
 
 import java.util.List;
 public class MainActivity extends Activity implements MainView, AdapterView.OnItemClickListener {

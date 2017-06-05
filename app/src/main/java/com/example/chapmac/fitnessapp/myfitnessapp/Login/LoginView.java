@@ -1,4 +1,4 @@
-package com.example.chapmac.fitnessapp.myfitnessapp;
+package com.example.chapmac.fitnessapp.myfitnessapp.Login;
 
 public interface LoginView {
     void showProgress();

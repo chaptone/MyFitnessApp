@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorWhite"
-    tools:context="com.example.chapmac.fitnessapp.myfitnessapp.PostureActivity">
+    tools:context="com.example.chapmac.fitnessapp.myfitnessapp.Posture.PostureActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -25,11 +25,21 @@
         />
 
     <ListView
+        android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="455dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/toolbar" />
 
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+        android:visibility="gone"
+        />
 
 </RelativeLayout>

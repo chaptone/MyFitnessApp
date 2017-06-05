@@ -1,4 +1,4 @@
-package com.example.chapmac.fitnessapp.myfitnessapp;
+package com.example.chapmac.fitnessapp.myfitnessapp.Data;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,19 +8,20 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.chapmac.fitnessapp.myfitnessapp.R;
+
 import java.util.List;
 
 /**
  * Created by chapmac on 6/5/2017 AD.
  */
 
-public class Adapter extends BaseAdapter{
-
-    private List<Workout> workoutList;
+public class AdapterPosture extends BaseAdapter {
+    private List<Posture> postureList;
     private LayoutInflater layoutInflater;
 
-    public Adapter(Context context,List<Workout> workoutList){
-        this.workoutList = workoutList;
+    public AdapterPosture(Context context, List<Posture> postureList){
+        this.postureList = postureList;
         this.layoutInflater = LayoutInflater.from(context);
     }
 
@@ -31,7 +32,7 @@ public class Adapter extends BaseAdapter{
 
     @Override
     public int getCount() {
-        return workoutList.size();
+        return postureList.size();
     }
 
     @Override
@@ -46,21 +47,21 @@ public class Adapter extends BaseAdapter{
 
     @Override
     public View getView(int position, View view, ViewGroup parent) {
-        ViewHolder holder;
+        Adapter.ViewHolder holder;
 
         if(view == null){
             view = layoutInflater.inflate(R.layout.row_layout,parent,false);
-            holder = new ViewHolder();
+            holder = new Adapter.ViewHolder();
 
             holder.title = (TextView)view.findViewById(R.id.txtTitle);
             holder.img = (ImageView)view.findViewById(R.id.icon);
             view.setTag(holder);
         }else{
-            holder = (ViewHolder)view.getTag();
+            holder = (Adapter.ViewHolder)view.getTag();
         }
 
-        holder.title.setText(workoutList.get(position).getTitle());
-        holder.img.setImageResource(workoutList.get(position).getIcon());
+        holder.title.setText(postureList.get(position).getTitle());
+        holder.img.setImageResource(postureList.get(position).getIcon());
 
         return view;
     }

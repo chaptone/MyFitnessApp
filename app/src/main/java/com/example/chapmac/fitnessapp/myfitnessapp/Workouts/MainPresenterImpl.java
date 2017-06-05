@@ -1,8 +1,8 @@
 
 
-package com.example.chapmac.fitnessapp.myfitnessapp;
+package com.example.chapmac.fitnessapp.myfitnessapp.Workouts;
 
-import android.content.Intent;
+import com.example.chapmac.fitnessapp.myfitnessapp.Data.Workout;
 
 import java.util.List;
 
