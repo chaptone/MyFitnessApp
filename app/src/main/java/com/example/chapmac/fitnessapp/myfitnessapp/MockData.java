@@ -10,17 +10,25 @@ import java.util.List;
 public class MockData {
 
 
-    private Posture posture;
-    private List<Posture> postureList;
+    private Workout workout;
+    private List<Workout> workoutList;
 
     public MockData(){
-        postureList = new ArrayList<>();
+        workoutList = new ArrayList<>();
     }
 
-    public List<Posture> getMockPosture(){
-        postureList.add(new Posture("Shoulder",R.mipmap.shoulder));
-        postureList.add(new Posture("Abs",R.mipmap.shoulder));
-        return postureList;
+    public List<Workout> getMockWorkout(){
+        workoutList.add(new Workout("Abs",R.mipmap.abs));
+        workoutList.add(new Workout("back",R.mipmap.back));
+        workoutList.add(new Workout("Biceps",R.mipmap.bicep));
+        workoutList.add(new Workout("Calf",R.mipmap.calf));
+        workoutList.add(new Workout("Chest",R.mipmap.chest));
+        workoutList.add(new Workout("Forearms",R.mipmap.forearm));
+        workoutList.add(new Workout("Legs",R.mipmap.legs));
+        workoutList.add(new Workout("Shoulders",R.mipmap.shoulder));
+        workoutList.add(new Workout("Triceps",R.mipmap.tricep));
+
+        return workoutList;
     }
 
 }

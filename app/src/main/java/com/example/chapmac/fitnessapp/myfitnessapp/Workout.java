@@ -4,11 +4,11 @@ package com.example.chapmac.fitnessapp.myfitnessapp;
  * Created by chapmac on 6/5/2017 AD.
  */
 
-public class Posture {
+public class Workout {
     private String title;
     private int icon;
 
-    public Posture (String title , int icon){
+    public Workout(String title , int icon){
         this.title = title;
         this.icon = icon;
     }

@@ -23,7 +23,7 @@ import java.util.List;
 public interface FindItemsInteractor {
 
     interface OnFinishedListener {
-        void onFinished(List<Posture> items);
+        void onFinished(List<Workout> items);
     }
 
     void findItems(OnFinishedListener listener);

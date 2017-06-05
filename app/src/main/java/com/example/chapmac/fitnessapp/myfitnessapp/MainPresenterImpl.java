@@ -36,7 +36,7 @@ public class MainPresenterImpl implements MainPresenter, FindItemsInteractor.OnF
     }
 
     @Override
-    public void onFinished(List<Posture> items) {
+    public void onFinished(List<Workout> items) {
         if (mainView != null) {
             mainView.setItems(items);
             mainView.hideProgress();

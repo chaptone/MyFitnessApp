@@ -1,7 +1,6 @@
 package com.example.chapmac.fitnessapp.myfitnessapp;
 
 import android.content.Context;
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,11 +16,11 @@ import java.util.List;
 
 public class Adapter extends BaseAdapter{
 
-    private List<Posture> postureList;
+    private List<Workout> workoutList;
     private LayoutInflater layoutInflater;
 
-    public Adapter(Context context,List<Posture> postureList){
-        this.postureList = postureList;
+    public Adapter(Context context,List<Workout> workoutList){
+        this.workoutList = workoutList;
         this.layoutInflater = LayoutInflater.from(context);
     }
 
@@ -32,7 +31,7 @@ public class Adapter extends BaseAdapter{
 
     @Override
     public int getCount() {
-        return postureList.size();
+        return workoutList.size();
     }
 
     @Override
@@ -60,8 +59,8 @@ public class Adapter extends BaseAdapter{
             holder = (ViewHolder)view.getTag();
         }
 
-        holder.title.setText(postureList.get(position).getTitle());
-        holder.img.setImageResource(postureList.get(position).getIcon());
+        holder.title.setText(workoutList.get(position).getTitle());
+        holder.img.setImageResource(workoutList.get(position).getIcon());
 
         return view;
     }

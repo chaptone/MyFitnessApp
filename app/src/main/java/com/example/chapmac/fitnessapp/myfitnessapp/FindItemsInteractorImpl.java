@@ -20,7 +20,6 @@ package com.example.chapmac.fitnessapp.myfitnessapp;
 
 import android.os.Handler;
 
-import java.util.Arrays;
 import java.util.List;
 
 public class FindItemsInteractorImpl implements FindItemsInteractor {
@@ -37,8 +36,8 @@ public class FindItemsInteractorImpl implements FindItemsInteractor {
         }, 2000);
     }
 
-    private List<Posture> createArrayList() {
+    private List<Workout> createArrayList() {
         mockData = new MockData();
-        return mockData.getMockPosture();
+        return mockData.getMockWorkout();
     }
 }

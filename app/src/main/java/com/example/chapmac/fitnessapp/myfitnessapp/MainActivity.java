@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
@@ -48,7 +47,7 @@ public class MainActivity extends Activity implements MainView, AdapterView.OnIt
         listView.setVisibility(View.VISIBLE);
     }
 
-    @Override public void setItems(List<Posture> items) {
+    @Override public void setItems(List<Workout> items) {
         Adapter adapter = new Adapter(this,items);
         listView.setAdapter(adapter);
     }

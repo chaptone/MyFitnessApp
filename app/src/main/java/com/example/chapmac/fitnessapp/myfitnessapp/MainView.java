@@ -9,7 +9,7 @@ public interface MainView {
 
     void hideProgress();
 
-    void setItems(List<Posture> items);
+    void setItems(List<Workout> items);
 
     void showMessage(String message);
 }
